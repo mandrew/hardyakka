@@ -1,0 +1,36 @@
+/**
+ * This support file is used to style the WYSIWYG editor in the CMS
+ *
+ * Including the typography.css file then some of the boilerplate css changes
+ * 
+ * ALPHA: needs testing!
+ */
+
+@import "typography.css";
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active { outline: none; }
+
+ul, ol { margin-left: 2em; }
+ol { list-style-type: decimal; }
+
+strong, th { font-weight: bold; }
+td { vertical-align: top; }
+
+/* Hack retained to preserve specificity */
+.mceContentBody { font:13px/1.231 sans-serif; *font-size:small; color: #444; }
