@@ -37,7 +37,9 @@ Once you have finished building your website and you wish to create the final ve
  * Update the /build/config/project.properties file in the 'Directory Structure' section to point to the correct theme files
 
 dir.js = themes/hardyakka/js
+
 dir.css = themes/hardyakka/css
+
 dir.images = themes/hardyakka/images
 
  * if you want to create the publish folder outside of the main SilverStripe installation then add the following code to the properties file:
