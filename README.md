@@ -26,7 +26,9 @@ Requires:
  * Update the /mysite/Page.php file to point to the correct css files
 
 Requirements::themedCSS('handheld', 'handheld');
+
 Requirements::themedCSS('style');
+
 Requirements::themedCSS('typography'); 
 
  * Start building your website
