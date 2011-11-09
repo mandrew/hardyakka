@@ -32,7 +32,7 @@
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		
 		<!-- Uncomment if you are specifically targeting less enabled mobile browsers
-		<link rel="stylesheet" media="handheld" href="{$ThemeDir}css/handheld.css?v=2">  -->
+		<link rel="stylesheet" media="handheld" href="$ThemeDir/css/handheld.css?v=2">  -->
 		<!-- I suggest including the css files here using SilverStripe -->
 
 		<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -75,8 +75,8 @@
 		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js"><\/script>')</script>
 
 		<!-- scripts concatenated and minified via ant build script-->
-			<script src="js/plugins.js"></script>
-			<script src="js/script.js"></script>
+			<script src="$ThemeDir/js/plugins.js"></script>
+			<script src="$ThemeDir/js/script.js"></script>
 		<!-- end scripts-->
 
 		<!--[if lt IE 7 ]>
