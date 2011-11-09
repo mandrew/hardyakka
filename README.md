@@ -23,12 +23,12 @@ Requires:
  * Add the Boilerplate files into the SilverStripe installation folder
  * Drop the /hardyakka folder into the /themes folder
  * Update the /mysite/_config.php file to point to the 'hardyakka' theme
+SSViewer::set_theme('hardyakka');
+
  * Update the /mysite/Page.php file to point to the correct css files
 
 Requirements::themedCSS('handheld', 'handheld');
-
 Requirements::themedCSS('style');
-
 Requirements::themedCSS('typography'); 
 
  * Start building your website
