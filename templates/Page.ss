@@ -32,11 +32,11 @@
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		
 		<!-- Uncomment if you are specifically targeting less enabled mobile browsers
-		<link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
+		<link rel="stylesheet" media="handheld" href="{$ThemeDir}css/handheld.css?v=2">  -->
 		<!-- I suggest including the css files here using SilverStripe -->
 
 		<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-		<script src="js/libs/modernizr-1.7.min.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-1.7-development-only.js"></script>
 	</head>
 	<body>
 		<!-- Here you might have <div id="dockbar" role="application"> -->
