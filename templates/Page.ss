@@ -18,7 +18,7 @@
 		
 		<!-- meta tag example - delete me if not needed -->
 		<meta name="author" content="Website Author" />
-		<meta name="description" content="A description of your site and/or page." />
+		<meta name="description" content="$SiteConfig.Tagline" />
 		<meta name="language" content="en" />
 		<meta name="robots" content="index, follow" />
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
