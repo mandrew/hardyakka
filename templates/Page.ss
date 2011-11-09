@@ -1,9 +1,9 @@
 <!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if lt IE 7]> <html class="no-js ie6" lang="$ContentLocale"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="$ContentLocale"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="$ContentLocale"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="$ContentLocale"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
 		<% base_tag %>
@@ -18,8 +18,8 @@
 		
 		<!-- meta tag example - delete me if not needed -->
 		<meta name="author" content="Website Author" />
-		<meta name="description" content="A description of your site and/or page." />
-		<meta name="language" content="en" />
+		<meta name="description" content="$SiteConfig.Tagline" />
+		<meta name="language" content="$ContentLocale" />
 		<meta name="robots" content="index, follow" />
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
 		<!-- meta tag example end -->
@@ -32,11 +32,11 @@
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		
 		<!-- Uncomment if you are specifically targeting less enabled mobile browsers
-		<link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
+		<link rel="stylesheet" media="handheld" href="$ThemeDir/css/handheld.css?v=2">  -->
 		<!-- I suggest including the css files here using SilverStripe -->
 
 		<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-		<script src="js/libs/modernizr-1.7.min.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-1.7-development-only.js"></script>
 	</head>
 	<body>
 		<!-- Here you might have <div id="dockbar" role="application"> -->
@@ -75,8 +75,8 @@
 		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js"><\/script>')</script>
 
 		<!-- scripts concatenated and minified via ant build script-->
-			<script src="js/plugins.js"></script>
-			<script src="js/script.js"></script>
+			<script src="$ThemeDir/js/plugins.js"></script>
+			<script src="$ThemeDir/js/script.js"></script>
 		<!-- end scripts-->
 
 		<!--[if lt IE 7 ]>
