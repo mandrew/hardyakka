@@ -30,9 +30,12 @@ SSViewer::set_theme('hardyakka');
 
 Requirements::themedCSS('handheld', 'handheld');
 
-Requirements::themedCSS('style');
+Requirements::themedCSS('style'); // or Requirements::themedCSS('layout');
 
-Requirements::themedCSS('typography'); 
+Requirements::themedCSS('typography');
+
+# Note: if you are going to use the style.css file then keep the blank layout.css file so the cms/layout.css styles aren't inherited into your template on a fresh install
+# or instead rename the style.css file to layout.css so as to not cause these conflicts
 
  * Start building your website
 
