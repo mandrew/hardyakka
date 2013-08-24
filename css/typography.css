@@ -11,17 +11,12 @@
  * Author: Michael Andrewartha
  */
 
- 
-/**
- * Generic styles
- */
-/*.typography * { font-family: Georgia, serif; } */
-
-
 /**
  * Paragraphs 
  */
-.typography p { color: #444; }
+.typography p {
+	margin: 1em 0;
+}
 
 /**
  * Italics 
@@ -29,15 +24,25 @@
 .typography em { font-style: italic; }
 
 /**
- * Quotes
+ * Address CSS quotes not supported in IE 6/7.
  */
-/* .typography blockquote,
-.typography q { quotes: none; font-style: italic; }
 
-.typography blockquote:before,
-.typography blockquote:after,
+.typography q,
+.typography blockquote {
+    quotes: none;
+}
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+
 .typography q:before,
-.typography q:after { content: ""; content: none; } */
+.typography q:after,
+.typography blockquote:before,
+.typography blockquote:after {
+    content: '';
+    content: none;
+}
 
 /**
  * Links 
@@ -80,28 +85,53 @@
 
 /**
  * List styles
- * Note: List styles have no default styling; define those yourself
  */
-/* .typography ul, 
-.typography ol {} */
+.typography ul, 
+.typography ol {
+	margin: 1em 0;
+}
 
 /**
  * Header styles
- * Note: Headers (h1, h2, etc) have no default font-size or margin; define those yourself
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
  */
-.typography h1,
-.typography h2,
-.typography h3,
-.typography h4,
-.typography h5,
-.typography h6 { font-weight: bold; }
+
+.typography h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+.typography h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+.typography h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+.typography h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+.typography h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+.typography h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
 
 /**
  * Table styles
- * Tables have no default styling; define these yourself
  * TIP: leave the default styling blank and set up extra styles as below
  */
-.typography .formalTable { border: 1px solid red; }
+.typography table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.typography .formalTable { /* create your own table styling here */ }
 
 /**
  * WYSIWYG Editor Alignment Classes 

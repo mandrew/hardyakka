@@ -1,10 +1,8 @@
-### WARNING: this module and the following instructions haven't been 100% tested and is in an ALPHA state
-
 ## Overview
 
-hardyakka theme [See 'Hard Yakka' meaning](http://en.wikipedia.org/wiki/Yakka) is a HTML5 Boilerplate template for the SilverStripe CMS ([http://silverstripe.org](http://silverstripe.org)). 
+hardyakka developer theme [See 'Hard Yakka' meaning](http://en.wikipedia.org/wiki/Yakka) is a HTML5 Boilerplate template for the SilverStripe CMS ([http://silverstripe.org](http://silverstripe.org)). 
 It is based on a similar idea used by the Boilerplate Wordpress theme (http://wordpress.org/extend/themes/boilerplate) to also provide 
-a .ss template of all the default html objects you need to style for each SilverStripe website. I have done all the hard yakka in setting 
+a .ss template of all the default html objects you need to start styling a SilverStripe website. I have done all the hard yakka in setting 
 up this SilverStripe theme, all you need to do is implement your design then follow the instructions to implement your own HTML5 website.
 
 Requires:
@@ -20,32 +18,37 @@ Requires:
 ## Install Theme ##
 
  * Install SilverStripe
- * Add the Boilerplate files into the SilverStripe installation folder
- * Drop the /hardyakka folder into the /themes folder
+ * Add the following Boilerplate files into the SilverStripe installation folder
+	* Apple touch icons
+	* favicon.ico
+	* humans.txt
+	* robots.txt
+
+ * Run git clone git@github.com:mandrew/hardyakka.git in the /themes folder
  * Update the /mysite/_config.php file to point to the 'hardyakka' theme
 
 SSViewer::set_theme('hardyakka');
-
- * Update the /mysite/Page.php file to point to the correct css files
-
-Requirements::themedCSS('handheld', 'handheld');
-
-Requirements::themedCSS('style'); // or Requirements::themedCSS('layout');
-
-Requirements::themedCSS('typography');
 
 **Note:** if you are going to use the style.css file then keep the blank layout.css file so the cms/layout.css styles aren't inherited into your template on a fresh install
 or instead rename the style.css file to layout.css so as to not cause these conflicts
 
  * Start building your website
 
-Dont forget to
+Dont forget to:
 
  * Change the favicons.ico and apple touch icons
  * Update the google analytics code at the bottom of the Page.ss file
- * Update the humans.txt files
+ * Update the humans.txt file
+ * Update the robots.txt file
+
+## SASSify your theme ##
+
+Although the theme comes with css by default, you could use https://github.com/sporkd/compass-h5bp instead of the files in /css to get started using the boilerplate in sass.
  
 ## Work the HTML5 Boilerplate magic ##
+
+**Note:** this step isn't necessary to publish a SilverStripe site but if you wish to use the template build script that comes with HTML5 Boilerplate then follow the below steps.
+
 Once you have finished building your website and you wish to create the final version so you can publish and deploy the site
 
  * Update the /build/config/project.properties file in the 'Directory Structure' section to point to the correct theme files

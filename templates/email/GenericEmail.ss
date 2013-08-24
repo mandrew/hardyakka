@@ -1,11 +1,11 @@
 <html>
     <head>
         <style>
-            p{
+            p {
                 font-size: 1.2em;
                 color: #444;
             }
-            p.comments{
+            p.comments {
                 font-size: 1.4em;
                 color: #222;
                 padding: 20px;

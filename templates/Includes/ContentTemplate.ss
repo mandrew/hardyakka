@@ -1,4 +1,5 @@
 ﻿<br>
+<hr>
 <h1>Hard Yakka Default Template - Built by Michael Andrewartha (mandrewnz (at) gmail dot com)</h1>
 <p>Website: <a href="http://mike.andrewartha.co.nz/">http://mike.andrewartha.co.nz/</a></p>
 <p>Twitter: <a href="http://twitter.com/mandrewnz">mandrewnz</a></p></br>
@@ -20,7 +21,7 @@
 <p><strong>Lorem</strong> ipsum <em>dolor</em> sit <em>amet</em>, test link <span style="text-decoration: underline;">adipiscing</span> elit. <span style="text-decoration: line-through;">Nullam</span> dignissim <a href="">Your Link</a>. Quisque aliquam. <a title="Your Link description" href="" target="_blank">Your Link to another window</a> (with link description) faucibus. Nunc iaculis <a href="assets/Uploads/test.doc" target="_blank">Word Document</a> dui. Nam sit amet sem. <a href="assets/Uploads/test.pdf" target="_blank">PDF Document</a> libero nisi, imperdiet at, <a href="assets/Uploads/test.xls" target="_blank">Excel Document</a> nec, gravida vehicula, nisl. <a href="assets/Uploads/test.zip" target="_blank">Zip Document</a> mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla <a title="test website email link" href="mailto:test@test.com">test@test.com</a>. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.﻿﻿</p>
 
 <p> </p>
-<p>&amp; € £﻿ ™ ©</p>
+<p>&amp; &#36; &pound; &euro; &#8482; &copy;</p>
 <p> </p>
 <p style="padding-left: 30px;">One text indent</p>
 <p style="padding-left: 30px;"> </p>
@@ -96,20 +97,20 @@
 
 <h1>Images with dummy text</h1>
 <p> </p>
-<p><img class="left" title="" src="$ThemeDir/images/SilverStripeLogo.png" alt="" width="150" height="133"/>Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+<p><img class="left" title="" src="{$ThemeDir}/images/SilverStripeLogo.png" alt="" width="150" height="133"/>Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
 <p>Lorem ipsum dolor sit amet, emphasis consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
 
 <p>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.﻿</p>
-<p>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. <img class="left" title="" src="$ThemeDir/images/SilverStripeLogo.png" alt="" width="50" height="44"/>Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.﻿﻿</p>
-<p>Lorem ipsum dolor sit amet, <em>emphasis </em>consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. <img class="leftAlone" title="" src="$ThemeDir/images/SilverStripeLogo.png" alt="" width="150" height="133"/>Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.﻿ <img class="right" title="" src="$ThemeDir/images/SilverStripeLogo.png" alt="" width="150" height="133"/>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.﻿﻿</p>
+<p>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. <img class="left" title="" src="{$ThemeDir}/images/SilverStripeLogo.png" alt="" width="50" height="44"/>Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.﻿﻿</p>
+<p>Lorem ipsum dolor sit amet, <em>emphasis </em>consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. <img class="leftAlone" title="" src="{$ThemeDir}/images/SilverStripeLogo.png" alt="" width="150" height="133"/>Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.﻿ <img class="right" title="" src="{$ThemeDir}/images/SilverStripeLogo.png" alt="" width="150" height="133"/>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.﻿﻿</p>
 
 <p>Lorem ipsum dolor sit amet, <a title="test link" href="?flush=1#">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet, <em>emphasis</em>consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-<p>Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.﻿ Lorem ipsum dolor sit amet, <em>emphasis</em>consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. <img class="center" title="" src="$ThemeDir/images/SilverStripeLogo.png" alt="" width="150" height="133"/>Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.﻿</p>
+<p>Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.﻿ Lorem ipsum dolor sit amet, <em>emphasis</em>consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. <img class="center" title="" src="{$ThemeDir}/images/SilverStripeLogo.png" alt="" width="150" height="133"/>Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.﻿</p>
 <p>Lorem ipsum dolor sit amet, <em>emphasis</em>consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. ﻿</p>
 
 <div class="captionImage left" style="width: 200px;">
 	<div class="captionImage left" style="width: 200px;">
-		<img class="left" title="title text" src="$ThemeDir/images/SilverStripeLogo.png" alt="alt text" width="200" height="177"/>
+		<img class="left" title="title text" src="{$ThemeDir}/images/SilverStripeLogo.png" alt="alt text" width="200" height="177"/>
 		<p class="caption">caption text</p>
 	</div>
 </div>
@@ -121,7 +122,7 @@
 
 <div class="captionImage leftAlone" style="width: 200px;">
 	<div class="captionImage leftAlone" style="width: 200px;">
-		<img class="leftAlone" title="title text" src="$ThemeDir/images/SilverStripeLogo.png" alt="alt text" width="200" height="177"/>
+		<img class="leftAlone" title="title text" src="{$ThemeDir}/images/SilverStripeLogo.png" alt="alt text" width="200" height="177"/>
 		<p class="caption">caption text</p>
 	</div>
 </div>
@@ -130,7 +131,7 @@
 
 <div class="captionImage right" style="width: 200px;">
 	<div class="captionImage right" style="width: 200px;">
-		<img class="right" title="title text" src="$ThemeDir/images/SilverStripeLogo.png" alt="alt text" width="200" height="177"/>
+		<img class="right" title="title text" src="{$ThemeDir}/images/SilverStripeLogo.png" alt="alt text" width="200" height="177"/>
 		<p class="caption">caption text</p>
 	</div>
 </div>
@@ -143,7 +144,7 @@
 
 <div class="captionImage center" style="width: 200px;">
 	<div class="captionImage center" style="width: 200px;">
-		<img class="center" title="title text" src="$ThemeDir/images/SilverStripeLogo.png" alt="alt text" width="200" height="177"/>
+		<img class="center" title="title text" src="{$ThemeDir}/images/SilverStripeLogo.png" alt="alt text" width="200" height="177"/>
 		<p class="caption">caption text</p>
 	</div>
 </div>
