@@ -2,9 +2,18 @@
 	"name": "mandrew/hardyakka",
 	"description": "Hardyakka - A default HTML5 Boilerplate theme designed for SilverStripe installations",
 	"type": "silverstripe-theme",
+	"homepage": "http://github.com/mandrew/hardyakka",
+	"keywords": ["silverstripe", "theme"],
+	"license": "BSD-3-Clause",
+	"authors": [
+	    {"name": "Mike","email": "mandrewnz at gmail dot com"}
+	],
+	"support": {
+	    "issues": "http://github.com/mandrew/hardyakka/issues"
+	},
 	"require": {
 		"composer/installers": "*",
-		"silverstripe/cms": ">=3.0",
-		"silverstripe/framework": ">=3.0"
+		"silverstripe/cms": "~3.0",
+		"silverstripe/framework": "~3.0"
 	}
 }
