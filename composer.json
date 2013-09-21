@@ -1,0 +1,10 @@
+{
+	"name": "mandrew/hardyakka",
+	"description": "Hardyakka - A default HTML5 Boilerplate theme designed for SilverStripe installations",
+	"type": "silverstripe-theme",
+	"require": {
+		"composer/installers": "*",
+		"silverstripe/cms": ">=3.0",
+		"silverstripe/framework": ">=3.0"
+	}
+}

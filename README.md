@@ -1,14 +1,15 @@
+## Hardyakka template
+
 ## Overview
 
 hardyakka developer theme [See 'Hard Yakka' meaning](http://en.wikipedia.org/wiki/Yakka) is a HTML5 Boilerplate template for the SilverStripe CMS ([http://silverstripe.org](http://silverstripe.org)). 
 It is based on a similar idea used by the Boilerplate Wordpress theme (http://wordpress.org/extend/themes/boilerplate) to also provide 
-a .ss template of all the default html objects you need to start styling a SilverStripe website. I have done all the hard yakka in setting 
-up this SilverStripe theme, all you need to do is implement your design then follow the instructions to implement your own HTML5 website.
+a .ss template of all the default html objects you need to start creating a SilverStripe website.
 
 Requires:
 
  * A [SilverStripe Installer](http://github.com/silverstripe/silverstripe-installer) base project
- * The latest [HTML5 Boilerplate](http://html5boilerplate.com/) files
+ * Some of the latest [HTML5 Boilerplate](http://html5boilerplate.com/) files
 
 ## TODO ##
 
