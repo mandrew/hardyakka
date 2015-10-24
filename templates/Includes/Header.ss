@@ -4,7 +4,7 @@
 		<% if $SiteConfig.Tagline %><p><$SiteConfig.Tagline</p><% end_if %>
 	</a>
 	
-	<% if $SearchForm %>$SearchForm<% end_if %> <!-- see http://doc.silverstripe.org/sapphire/en/tutorials/4-site-search to enable site search -->
+	<% if $SearchForm %>$SearchForm<% end_if %>
 	
 	<% include Navigation %>
 </header>

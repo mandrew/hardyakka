@@ -9,7 +9,7 @@
 	<li><a href="http://silverstripe.com/">SilverStripe.com</a></li>
 	<li><a href="http://silverstripe.org/">SilverStripe.org</a></li>
 	<li><a href="http://doc.silverstripe.org/">SilverStripe Documentation</a></li>
-	<li><a href="http://silverstripe.org/stable-download/">SilverStripe download page</a></li>
+	<li><a href="http://silverstripe.org/download/">SilverStripe download page</a></li>
 </ul>
 </br>
 

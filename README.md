@@ -1,24 +1,14 @@
-## Hardyakka template
+## Hardyakka developer theme
+Built by [mike.andrewartha.co.nz](http://mike.andrewartha.co.nz/)
 
 ## Overview
+Hardyakka [see meaning](http://en.wikipedia.org/wiki/Yakka) is a HTML5 Boilerplate template for the SilverStripe CMS ([http://silverstripe.org](http://silverstripe.org)) based on a similar idea used by other CMS' to provide all the default html objects you need to start creating a SilverStripe theme.
 
-hardyakka developer theme [See 'Hard Yakka' meaning](http://en.wikipedia.org/wiki/Yakka) is a HTML5 Boilerplate template for the SilverStripe CMS ([http://silverstripe.org](http://silverstripe.org)). 
-It is based on a similar idea used by the Boilerplate Wordpress theme (http://wordpress.org/extend/themes/boilerplate) to also provide 
-a .ss template of all the default html objects you need to start creating a SilverStripe website.
-
-Requires:
-
+**Requires:**
  * A [SilverStripe Installer](http://github.com/silverstripe/silverstripe-installer) base project
- * Some of the latest [HTML5 Boilerplate](http://html5boilerplate.com/) files
 
-## TODO ##
-
- * Turn this theme into a more automated installation of Boilerplate
- * Possibly intergrate it into a default SilverStripe installation
-
-## Install Theme ##
-
- * Install SilverStripe
+## Installation instructions ##
+ * [Install SilverStripe](http://silverstripe.org/download)
  * Add the following Boilerplate files into the SilverStripe installation folder
 	* Apple touch icons
 	* favicon.ico
@@ -71,6 +61,11 @@ dir.publish = ../websitename-publish
  * Run a dev/build?flush=1
 
 If you have any issues with running the HTML5 Boilerplate build script then I'd advise watching the videos at the [HTML5 Boilerplate website](http://html5boilerplate.com/).
+
+## TODO ##
+
+ * Turn this theme into a more automated installation of Boilerplate
+ * Possibly intergrate it into a default SilverStripe installation
 
 ## Links ##
 
