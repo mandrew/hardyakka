@@ -9,19 +9,22 @@ Hardyakka [see meaning](http://en.wikipedia.org/wiki/Yakka) is a HTML5 Boilerpla
 
 ## Installation instructions ##
  * [Install SilverStripe](http://silverstripe.org/download)
- * Add the following Boilerplate files into the SilverStripe installation folder
-	* Apple touch icons
-	* favicon.ico
+ * Either manual install: Run `git clone git@github.com:mandrew/hardyakka.git` in the `/themes` folder
+   Or install by Composer: Run `composer require mandrew/hardyakka` and the theme will be installed
+ * base-files.zip contains the following files from HTML5 boilerplate
+	* apple-touch-icon.png
+	* browserconfig.xml
+	* crossdomain.xml
 	* humans.txt
 	* robots.txt
+	* tile-wide.png
+	* tile.png
+	Unzip and transfer these Boilerplate files (if needed) into the main SilverStripe installation folder
+ * Update the /mysite/_config/config.yml file to point to the 'hardyakka' theme e.g.
+SSViewer:
+  theme: 'hardyakka'
 
- * Run git clone git@github.com:mandrew/hardyakka.git in the /themes folder
- * Update the /mysite/_config.php file to point to the 'hardyakka' theme
-
-SSViewer::set_theme('hardyakka');
-
-**Note:** if you are going to use the style.css file then keep the blank layout.css file so the cms/layout.css styles aren't inherited into your template on a fresh install
-or instead rename the style.css file to layout.css so as to not cause these conflicts
+**Note:** if you are going to use the style.css file then keep the blank layout.css file so the cms/layout.css styles aren't inherited into your template on a fresh install or instead rename the style.css file to layout.css so as to not cause these conflicts
 
  * Start building your website
 
@@ -29,25 +32,20 @@ Dont forget to:
 
  * Change the favicons.ico and apple touch icons
  * Update the google analytics code at the bottom of the Page.ss file
- * Update the humans.txt file
- * Update the robots.txt file
+ * Update the humans.txt, robots.txt, crossdomain.xml and browserconfig.xml files
 
-## SASSify your theme ##
-
-Although the theme comes with css by default, you could use https://github.com/sporkd/compass-h5bp instead of the files in /css to get started using the boilerplate in sass.
+## Extend the base theme ##
+Although HTML5 Boilerplate comes with css, you can follow the docs/ files to extend this theme and even get it working with twitter bootstrap if you want to.
  
-## Work the HTML5 Boilerplate magic ##
+## Work the HTML5 Boilerplate build script magic ##
+**Note:** This step isn't necessary to publish a SilverStripe site but if you wish to use the template build script that comes with HTML5 Boilerplate then follow the below steps (now located at https://github.com/h5bp/ant-build-script). Also these instructions are untested with the latest version so if you try this and have any changes then please submit a pull request with an update to these instructions.
 
-**Note:** this step isn't necessary to publish a SilverStripe site but if you wish to use the template build script that comes with HTML5 Boilerplate then follow the below steps.
-
-Once you have finished building your website and you wish to create the final version so you can publish and deploy the site
+Once you have finished building your website and you wish to create the final version using the build script:
 
  * Update the /build/config/project.properties file in the 'Directory Structure' section to point to the correct theme files
 
 dir.js = themes/hardyakka/js
-
 dir.css = themes/hardyakka/css
-
 dir.images = themes/hardyakka/images
 
  * if you want to create the publish folder outside of the main SilverStripe installation then add the following code to the properties file:
