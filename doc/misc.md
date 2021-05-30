@@ -1,4 +1,4 @@
-[HTML5 Boilerplate homepage](https://html5boilerplate.com) | [Documentation
+[HTML5 Boilerplate homepage](https://html5boilerplate.com/) | [Documentation
 table of contents](TOC.md)
 
 # Miscellaneous
@@ -6,9 +6,10 @@ table of contents](TOC.md)
 * [.gitignore](#gitignore)
 * [.editorconfig](#editorconfig)
 * [Server Configuration](#server-configuration)
-* [crossdomain.xml](#crossdomainxml)
 * [robots.txt](#robotstxt)
+* [humans.txt](#humanstxt)
 * [browserconfig.xml](#browserconfigxml)
+* [package.json](#packagejson)
 
 --
 
@@ -31,9 +32,8 @@ globally ignore:
     excludesfile = ~/.gitignore
 ```
 
-* More on global ignores: https://help.github.com/articles/ignoring-files
+* More on global ignores: [https://help.github.com/articles/ignoring-files/](https://help.github.com/en/github/using-git/ignoring-files)
 * Comprehensive set of ignores on GitHub: https://github.com/github/gitignore
-
 
 ## .editorconfig
 
@@ -42,32 +42,32 @@ your team define and maintain consistent coding styles between different
 editors and IDEs.
 
 By default, `.editorconfig` includes some basic
-[properties](http://editorconfig.org/#supported-properties) that reflect the
+[properties](https://editorconfig.org/#supported-properties) that reflect the
 coding styles from the files provided by default, but you can easily change
 them to better suit your needs.
 
 In order for your editor/IDE to apply the
-[properties](http://editorconfig.org/#supported-properties) from the
-`.editorconfig` file, you will need to [install a
-plugin]( http://editorconfig.org/#download).
+[properties](https://editorconfig.org/#supported-properties) from the
+`.editorconfig` file, you may need to [install a
+plugin]( https://editorconfig.org/#download).
 
 __N.B.__ If you aren't using the server configurations provided by HTML5
 Boilerplate, we highly encourage you to configure your server to block
 access to `.editorconfig` files, as they can disclose sensitive information!
 
 For more details, please refer to the [EditorConfig
-project](http://editorconfig.org/).
-
+project](https://editorconfig.org/).
 
 ## Server Configuration
 
-H5BP includes a [`.htaccess`](#htaccess) file for the Apache HTTP server. If you are not using
-Apache as your web server, then you are encouraged to download a
-[server configuration](https://github.com/h5bp/server-configs) that corresponds
-to your web server and environment.
+H5BP includes a [`.htaccess`](#htaccess) file for the [Apache HTTP
+server](https://httpd.apache.org/docs/). If you are not using Apache
+as your web server, then you are encouraged to download a
+[server configuration](https://github.com/h5bp/server-configs) that
+corresponds to your web server and environment.
 
-A `.htaccess` (hypertext access) file is a
-[Apache HTTP server configuration file](https://github.com/h5bp/server-configs-apache).
+A `.htaccess` (hypertext access) file is an [Apache HTTP server
+configuration file](https://github.com/h5bp/server-configs-apache).
 The `.htaccess` file is mostly used for:
 
 * Rewriting URLs
@@ -79,11 +79,10 @@ The `.htaccess` file is mostly used for:
 
 If you have access to the main server configuration file (usually called
 `httpd.conf`), you should add the logic from the `.htaccess` file in, for
-example, a <Directory> section in the main configuration file. This is usually
+example, a `<Directory>` section in the main configuration file. This is usually
 the recommended way, as using .htaccess files slows down Apache!
 
-To enable Apache modules locally, please see:
-https://github.com/h5bp/server-configs-apache/wiki/How-to-enable-Apache-modules.
+To enable Apache modules locally, please see [the Apache modules documentation](https://github.com/h5bp/server-configs-apache#enable-apache-httpd-modules)
 
 In the repo the `.htaccess` is used for:
 
@@ -104,31 +103,13 @@ In the repo the `.htaccess` is used for:
 When using `.htaccess` we recommend reading all inline comments (the rules after
 a `#`) in the file once. There is a bunch of optional stuff in it.
 
-If you want to know more about the `.htaccess` file check out
-https://httpd.apache.org/docs/current/howto/htaccess.html.
+If you want to know more about the `.htaccess` file check out the
+[Apache HTTP server docs](https://httpd.apache.org/docs/) or more
+specifically the [htaccess
+section](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
 Notice that the original repo for the `.htaccess` file is [this
 one](https://github.com/h5bp/server-configs-apache).
-
-
-## crossdomain.xml
-
-The _cross-domain policy file_ is an XML document that gives a web client —
-such as Adobe Flash Player, Adobe Reader, etc. — permission to handle data
-across multiple domains, by:
-
- * granting read access to data
- * permitting the client to include custom headers in cross-domain requests
- * granting permissions for socket-based connections
-
-__e.g.__ If a client hosts content from a particular source domain and that
-content makes requests directed towards a domain other than its own, the remote
-domain would need to host a cross-domain policy file in order to grant access
-to the source domain and allow the client to continue with the transaction.
-
-For more in-depth information, please see Adobe's [cross-domain policy file
-specification](https://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html).
-
 
 ## robots.txt
 
@@ -137,8 +118,8 @@ be crawled from the website.
 
 By default, the file provided by this project includes the next two lines:
 
- * `User-agent: *` -  the following rules apply to all web robots
- * `Disallow:` - everything on the website is allowed to be crawled
+* `User-agent: *` -  the following rules apply to all web robots
+* `Disallow:` - everything on the website is allowed to be crawled
 
 If you want to disallow certain pages you will need to specify the path in a
 `Disallow` directive (e.g.: `Disallow: /path`) or, if you want to disallow
@@ -153,15 +134,28 @@ you want to block access to private content, use proper authentication instead.
 
 For more information about `robots.txt`, please see:
 
-  * [robotstxt.org](http://www.robotstxt.org/)
-  * [How Google handles the `robots.txt` file](https://developers.google.com/webmasters/control-crawl-index/docs/robots_txt)
+* [robotstxt.org](https://www.robotstxt.org/)
+* [How Google handles the `robots.txt` file](https://developers.google.com/search/reference/robots_txt)
 
+## humans.txt
+
+The `humans.txt` file is used to provide information about people involved with
+the website.
+
+The provided file contains three sections:
+
+* `TEAM` - this is intended to list the group of people responsible for the website
+* `THANKS` - this is intended to list the group of people that have contributed
+  to the website
+* `TECHNOLOGY COLOPHON` - the section lists technologies used to make the website
+
+For more information about `humans.txt`, please see: http://humanstxt.org/
 
 ## browserconfig.xml
 
 The `browserconfig.xml` file is used to customize the tile displayed when users
 pin your site to the Windows 8.1 start screen. In there you can define custom
-tile colors, custom images or even [live tiles](https://msdn.microsoft.com/en-us/library/ie/dn455106.aspx#CreatingLiveTiles).
+tile colors, custom images or even [live tiles](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/samples/dn455106(v=vs.85)).
 
 By default, the file points to 2 placeholder tile images:
 
@@ -172,4 +166,38 @@ By default, the file points to 2 placeholder tile images:
 Notice that IE11 uses the same images when adding a site to the `favorites`.
 
 For more in-depth information about the `browserconfig.xml` file, please
-see [MSDN](https://msdn.microsoft.com/en-us/library/ie/dn320426.aspx).
+see [MSDN](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn320426(v=vs.85)).
+
+## package.json
+
+`package.json` is used to define attributes of your site or application for
+use in modern JavaScript development. [The full documentation is available](https://docs.npmjs.com/files/package.json)
+if you're interested. The fields we provide are as follows:
+
+* `title` - the title of your project. If you expect to publish your application
+  to npm, then the name needs to follow [certain guidelines](https://docs.npmjs.com/files/package.json#name)
+  and be unique.
+* `version` - indicates the version of your site application using semantic
+  versioning ([semver](https://docs.npmjs.com/misc/semver))
+* `description` - describes your site.
+* `scripts` - is a JavaScript object containing commands that can be run in a
+  node environment. There are many [built-in keys](https://docs.npmjs.com/misc/scripts)
+  related to the package lifecycle that node understands automatically. You can
+  also define custom scripts for use with your application development. We
+  provide three custom scripts that work with Parcel to get you up and running
+  quickly with a bundler for your assets and a simple development server.
+
+  * `start` builds your site and starts a server
+  * `build` builds your `index.html` using Parcel
+  * `dev` serves your `index.html` with a simple development server
+
+* `keywords` - an array of keywords used to discover your app in the npm
+  registry
+* `author` - defines the author of a package. There is also an alternative
+  [contributors](https://docs.npmjs.com/files/package.json#people-fields-author-contributors)
+  field if there's more than one author.
+* `license` - the license for your application. Must conform to
+  [specific rules](https://docs.npmjs.com/files/package.json#license)
+* `devDependencies` - development dependencies for your package. In our case
+  it's a single dependency, Parcel, which we use to bundle files and run a
+  simple web server.

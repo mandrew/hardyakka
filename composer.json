@@ -5,12 +5,24 @@
 	"homepage": "http://github.com/mandrew/hardyakka",
 	"keywords": ["silverstripe", "theme", "skeleton", "html5", "boilerplate"],
 	"license": "BSD-3-Clause",
+	"authors": [
+        {
+            "name": "Mike Andrewartha",
+            "homepage": "https://mike.andrewartha.co.nz"
+        }
+    ],
 	"support": {
 	    "issues": "http://github.com/mandrew/hardyakka/issues"
 	},
 	"require": {
 		"composer/installers": "*",
-		"silverstripe/cms": "^3.2",
-		"silverstripe/framework": "^3.2"
+		"silverstripe/framework": ">=3.2"
+	},
+	"extra": {
+        "expose": [
+            "css",
+            "images",
+            "js"
+        ]
 	}
 }

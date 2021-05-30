@@ -1,4 +1,4 @@
-[HTML5 Boilerplate homepage](https://html5boilerplate.com) | [Documentation
+[HTML5 Boilerplate homepage](https://html5boilerplate.com/) | [Documentation
 table of contents](TOC.md)
 
 # The HTML
@@ -7,24 +7,22 @@ By default, HTML5 Boilerplate provides two `html` pages:
 
 * [`index.html`](#indexhtml) - a default HTML skeleton that should form the
   basis of all pages on your website
-* [`404.html`](#404html) - a placeholder 404 error page
-
+* `404.html` - a placeholder 404 error page
 
 ## `index.html`
 
-
-### The `no-js` class
+### The `no-js` Class
 
 The `no-js` class is provided in order to allow you to more easily and
-explicitly add custom styles based on whether JavaScript is disabled
-(`.no-js`) or enabled (`.js`). Using this technique also helps [avoid the
+explicitly add custom styles based on whether JavaScript is disabled (`.no-js`)
+or enabled (`.js`). Using this technique also helps [avoid the
 FOUC](https://www.paulirish.com/2009/avoiding-the-fouc-v3/).
 
+### Language Attribute
 
-## Language attribute
-
-Please consider specifying the language of your content by adding the `lang`
-attribute to `<html>` as in this example:
+Please consider specifying the language of your content by adding a
+[value](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry)
+to the `lang` attribute in the `<html>` as in this example:
 
 ```html
 <html class="no-js" lang="en">
@@ -32,192 +30,224 @@ attribute to `<html>` as in this example:
 
 ### The order of the `<title>` and `<meta>` tags
 
-The order in which the `<title>` and the `<meta>` tags are specified is
-important because:
+The charset declaration (`<meta charset="utf-8">`) must be included completely
+within the [first 1024 bytes of the
+document](https://html.spec.whatwg.org/multipage/semantics.html#charset)
+and should be specified as early as possible (before any content that could be
+controlled by an attacker, such as a `<title>` element) in order to avoid a
+potential [encoding-related security
+issue](https://code.google.com/archive/p/doctype-mirror/wikis/ArticleUtf7.wiki)
+in Internet Explorer
 
-1) the charset declaration (`<meta charset="utf-8">`):
+### Meta Description
 
-   * must be included completely within the [first 1024 bytes of the
-     document](https://www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset)
-
-   * should be specified as early as possible (before any content that could
-     be controlled by an attacker, such as a `<title>` element) in order to
-     avoid a potential [encoding-related security
-     issue](https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7) in
-     Internet Explorer
-
-2) the meta tag for compatibility mode
-   (`<meta http-equiv="x-ua-compatible" content="ie=edge">`):
-
-   * [needs to be included before all other tags except for the `<title>` and
-     the other `<meta>`
-     tags](https://msdn.microsoft.com/en-us/library/cc288325.aspx)
-
-
-### `x-ua-compatible`
-
-Internet Explorer 8/9/10 support [document compatibility
-modes](https://msdn.microsoft.com/en-us/library/cc288325.aspx) that affect the
-way webpages are interpreted and displayed. Because of this, even if your site's
-visitor is using, let's say, Internet Explorer 9, it's possible that IE will not
-use the latest rendering engine, and instead, decide to render your page using
-the Internet Explorer 5.5 rendering engine.
-
-Specifying the `x-ua-compatible` meta tag:
+The `description` meta tag provides a short description of the page. In some
+situations this description is used as a part of the snippet shown in the search
+results.
 
 ```html
-<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content="This is a description">
 ```
 
-or sending the page with the following HTTP response header
+Google's [Create good meta
+descriptions](https://support.google.com/webmasters/answer/35624?hl=en#meta-descriptions)
+documentation has useful tips on creating an effective description.
 
-```
-X-UA-Compatible: IE=edge
-```
-
-will force Internet Explorer 8/9/10 to render the webpage in the highest
-available mode in [the various cases when it may
-not](https://hsivonen.fi/doctype/#ie8), and therefore, ensure that anyone
-browsing your site is treated to the best possible user experience that
-browser can offer.
-
-If possible, we recommend that you remove the `meta` tag and send only the
-HTTP response header as the `meta` tag will not always work if your site is
-served on a non-standard port, as Internet Explorer's preference option
-`Display intranet sites in Compatibility View` is checked by default.
-
-If you are using Apache as your webserver, including the
-[`.htaccess`](https://github.com/h5bp/server-configs-apache) file takes care of
-the HTTP header. If you are using a different server, check out our [other
-server config](https://github.com/h5bp/server-configs).
-
-Starting with Internet Explorer 11, [document modes are
-deprecated](https://msdn.microsoft.com/en-us/library/ie/bg182625.aspx#docmode).
-If your business still relies on older web apps and services that were
-designed for older versions of Internet Explorer, you might want to consider
-enabling [Enterprise Mode](http://blogs.msdn.com/b/ie/archive/2014/04/02/stay-up-to-date-with-enterprise-mode-for-internet-explorer-11.aspx) throughout your company.
-
-
-## Mobile viewport
+### Mobile Viewport
 
 There are a few different options that you can use with the [`viewport` meta
 tag](https://docs.google.com/present/view?id=dkx3qtm_22dxsrgcf4 "Viewport and
-Media Queries - The Complete Idiot's Guide"). You can find out more in [the
-Apple developer docs](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html).
-HTML5 Boilerplate comes with a simple setup that strikes a good balance for general use cases.
+Media Queries - The Complete Idiot's Guide"). You can find out more in [the MDN
+Web
+Docs](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag).
+HTML5 Boilerplate comes with a simple setup that strikes a good balance for
+general use cases.
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-## Favicons and Touch Icon
+If you want to take advantage of edge-to-edge displays of iPhone X/XS/XR you
+can do so with additional viewport parameters. [Check the WebKit
+blog](https://webkit.org/blog/7929/designing-websites-for-iphone-x/) for
+details.
 
-The shortcut icons should be put in the root directory of your site. HTML5
-Boilerplate comes with a default set of icons (include favicon and one Apple
-Touch Icon) that you can use as a baseline to create your own.
+### Open Graph Metadata
+
+The [Open Graph Protocol](https://ogp.me/) allows you to define the way your
+site is presented when referenced on third party sites and applications
+(Facebook, Twitter, LinkedIn). The protocol provides a series of meta elements
+that define the details of your site. The required attributes define the title,
+preview image, URL, and [type](https://ogp.me/#types) (e.g., video, music,
+website, article).
+
+``` html
+<meta property="og:title" content="">
+<meta property="og:type" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+```
+
+In addition to these four attributes there are many more attributes you can use
+to add more richness to the description of your site. This just represents the
+most basic implementation.
+
+To see a working example, the following is the open graph metadata for the HTML5
+Boilerplate site. In addition to the required fields we add `og:description` to
+describe the site in more detail.
+
+``` html
+<meta name="og:url" content="https://html5boilerplate.com/">
+<meta name="og:title" content="HTML5 ★ BOILERPLATE">
+<meta name="og:type" content="website">
+<meta name="og:description" content="The web’s most popular front-end template which helps you build fast, robust, and adaptable web apps or sites.">
+<meta name="og:image" content="https://html5boilerplate.com/icon.png">
+```
+
+### Web App Manifest
+
+HTML5 Boilerplate includes a simple web app manifest file.
+
+The web app manifest is a simple JSON file that allows you to control how your
+app appears on a device's home screen, what it looks like when it launches in
+that context and what happens when it is launched. This allows for much greater`
+control over the UI of a saved site or web app on a mobile device.
+
+It's linked to from the HTML as follows:
+
+```html
+<link rel="manifest" href="site.webmanifest">
+```
+
+Our
+[site.webmanifest](https://github.com/h5bp/html5-boilerplate/blob/master/src/site.webmanifest)
+contains a very skeletal "app" definition, just to show the basic usage. You
+should fill this file out with [more information about your site or
+application](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+
+### Favicons and Touch Icon
+
+The shortcut icons should be put in the root directory of your site.
+`favicon.ico` is automatically picked up by browsers if it's placed in the root.
+HTML5 Boilerplate comes with a default set of icons (include favicon and one
+Apple Touch Icon) that you can use as a baseline to create your own.
 
 Please refer to the more detailed description in the [Extend section](extend.md)
 of these docs.
 
-## Modernizr
+### The Content Area
+
+The central part of the boilerplate template is pretty much empty. This is
+intentional, in order to make the boilerplate suitable for both web page and web
+app development.
+
+### Modernizr
 
 HTML5 Boilerplate uses a custom build of Modernizr.
 
-[Modernizr](http://modernizr.com) is a JavaScript library which adds classes to
-the `html` element based on the results of feature test and which ensures that
-all browsers can make use of HTML5 elements (as it includes the HTML5 Shiv).
-This allows you to target parts of your CSS and JavaScript based on the
+[Modernizr](https://modernizr.com/) is a JavaScript library which adds classes
+to the `html` element based on the results of feature test and which ensures
+that all browsers can make use of HTML5 elements (as it includes the HTML5
+Shiv). This allows you to target parts of your CSS and JavaScript based on the
 features supported by a browser.
 
-In general, in order to keep page load times to a minimum, it's best to call
-any JavaScript at the end of the page because if a script is slow to load
-from an external server it may cause the whole page to hang. That said, the
-Modernizr script *needs* to run *before* the browser begins rendering the page,
-so that browsers lacking support for some of the new HTML5 elements are able to
-handle them properly. Therefore the Modernizr script is the only JavaScript
-file synchronously loaded at the top of the document.
+Starting with version 3 Modernizr can be customized using the
+[modernizr-config.json](https://github.com/h5bp/html5-boilerplate/blob/master/modernizr-config.json)
+and the [Modernizr command line
+utility](https://www.npmjs.com/package/modernizr-cli).
 
-## What about polyfills?
+### What About Polyfills?
 
-If you need to include [polyfills](https://remysharp.com/2010/10/08/what-is-a-polyfill)
-in your project, you must make sure those load before any other JavaScript. If you're
-using some polyfill CDN service, like [cdn.polyfill.io](https://cdn.polyfill.io/),
-just put it before the other scripts in the bottom of the page:
+If you need to include
+[polyfills](https://remysharp.com/2010/10/08/what-is-a-polyfill) in your
+project, you must make sure those load before any other JavaScript. If you're
+using a polyfill CDN service, like [polyfill.io](https://polyfill.io/v3/), just put
+it before the other scripts in the bottom of the page:
 
 ```html
-    <script src="https://cdn.polyfill.io/v1/polyfill.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/modernizr-3.10.0.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 </body>
 ```
 
 If you like to just include the polyfills yourself, you could include them in
-`js/plugins.js`. When you have a bunch of polyfills to load in, you could
-also create a `polyfills.js` file in the `js/vendor` directory. Also using
-this technique, make sure the polyfills are all loaded before any other
-Javascript.
+`js/plugins.js`. When you have a bunch of polyfills to load in, you could also
+create a `polyfills.js` file in the `js/vendor` directory or include the files
+individually and combine them using a build tool. Always ensure that the
+polyfills are all loaded before any other JavaScript.
 
-There are some misconceptions about Modernizr and polyfills. It's important
-to understand that Modernizr just handles feature checking, not polyfilling
-itself. The only thing Modernizr does regarding polyfills is that the team
-maintains [a huge list of cross Browser polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills).
+There are some misconceptions about Modernizr and polyfills. It's important to
+understand that Modernizr just handles feature checking, not polyfilling itself.
+The only thing Modernizr does regarding polyfills is that the team maintains [a
+huge list of cross Browser
+polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills).
 
-## The content area
+### jQuery
 
-The central part of the boilerplate template is pretty much empty. This is
-intentional, in order to make the boilerplate suitable for both web page and
-web app development.
+As of v8.0.0 we no longer include jQuery by default. Web development has
+changed a lot since we started this project and while many millions of sites
+still use jQuery there are many sites and applications that don't. 10 years ago
+jQuery _was_ JavaScript for most developers. That's not the case any more so
+we've made the decision to remove jQuery from the project.
 
-### Browser Upgrade Prompt
+If you're interested in including it, you can easily install jQuery using the
+following command:
 
-The main content area of the boilerplate includes a prompt to install an up to
-date browser for users of IE 6/7. If you intended to support IE 6/7, then you
-should remove the snippet of code.
+```
+npm install jQuery
+```
 
-### Google CDN for jQuery
+You can then copy the minified file into the `vendor` folder and add jQuery
+to the `index.html` manually.
 
-The Google CDN version of the jQuery JavaScript library is referenced towards
-the bottom of the page using a protocol-independent path (read more about this
-in the [FAQ](faq.md)). A local fallback of jQuery is included for rare instances
-when the CDN version might not be available, and to facilitate offline
-development.
+To load jQuery from a CDN with a local fallback you can use the following:
 
-The Google CDN version is chosen over other [potential candidates (like the
-jQuery CDN](https://jquery.com/download/#using-jquery-with-a-cdn)) because
-it's fast in absolute terms and it has the best overall
-[penetration](http://httparchive.org/trends.php#perGlibs) which increases the
-odds of having a copy of the library in your user's browser cache.
-
-While the Google CDN is a strong default solution your site or application may
-require a different configuration. Testing your site with services like
-[WebPageTest](https://www.webpagetest.org/) and browser tools like
-[PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) or
-[YSlow](https://developer.yahoo.com/yslow/) will help you examine the real
-world performance of your site and can show where you can optimize your specific
-site or application.
-
+``` html
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.5.1.min.js"><\/script>')</script>
+```
 
 ### Google Universal Analytics Tracking Code
 
 Finally, an optimized version of the Google Universal Analytics tracking code is
-included. Google recommends that this script be placed at the top of the page.
-Factors to consider: if you place this script at the top of the page, you’ll
-be able to count users who don’t fully load the page, and you’ll incur the max
-number of simultaneous connections of the browser.
+included.
+
+We use `analytics.js` rather than the newer `gtag.js` as [it's faster and
+supports tasks and
+plugins](https://github.com/philipwalton/analyticsjs-boilerplate/issues/19#issuecomment-333714370)
+
+Starting with version 8.0.0 we, by default, [anonymize IP
+addresses](https://support.google.com/analytics/answer/2763052). By
+default Google Analytics records the full IP address of a user visiting the
+site, but that full IP address is never available to the Google Analytics
+property admin. By anonymizing the IP address you can make your site more
+GDPR-compliant as a full IP address can be defined as PII (personally
+identifiable information.)
+
+The beacon transport mechanism is used to send all hits [which saves HTTP
+requests and improves
+performance](https://philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site-i-build/#loading-analytics.js).
+
+Google recommends that this script be placed at the top of the page. Factors to
+consider: if you place this script at the top of the page, you’ll be able to
+count users who don’t fully load the page, and you’ll incur the max number of
+simultaneous connections of the browser.
+
+Please be aware that while Google [states that it is fully GDPR compliant](https://privacy.google.com/businesses/compliance/),
+it is still possible to use analytics to violate GDPR.
 
 Further information:
 
-* [Optimizing the Google Universal Analytics
-  Snippet](https://mathiasbynens.be/notes/async-analytics-snippet#universal-analytics)
 * [Introduction to
   Analytics.js](https://developers.google.com/analytics/devguides/collection/analyticsjs/)
 * [Google Analytics Demos & Tools](https://ga-dev-tools.appspot.com/)
+* [Privacy Controls in Google Analytics](https://support.google.com/analytics/answer/9019185)
 
-**N.B.** The Google Universal Analytics snippet is included by default mainly
-because Google Analytics is [currently one of the most popular tracking
+**N.B.** The Google Analytics snippet is included by default mainly because
+Google Analytics is [currently one of the most popular tracking
 solutions](https://trends.builtwith.com/analytics/Google-Analytics) out there.
 However, its usage isn't set in stone, and you SHOULD consider exploring the
-[alternatives](https://en.wikipedia.org/wiki/List_of_web_analytics_software)
-and use whatever suits your needs best!
+[alternatives](https://en.wikipedia.org/wiki/List_of_web_analytics_software) and
+use whatever suits your needs best.
