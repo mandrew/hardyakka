@@ -6,7 +6,7 @@
         <title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
         $MetaTags(false)
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Update with your own properties -->
+        <%-- Update with your own properties --%>
         <meta property="og:title" content="">
         <meta property="og:type" content="">
         <meta property="og:url" content="">
@@ -15,7 +15,7 @@
         <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
         <link rel="icon" href="favicons/favicon.ico">
         <link rel="manifest" href="favicons/site.webmanifest">
-        <!-- Update with your own theme colour -->
+        <%-- Update with your own theme colour --%>
         <meta name="msapplication-TileColor" content="#fafafa">
         <meta name="theme-color" content="#fafafa">
 
@@ -24,17 +24,20 @@
         <% require themedCSS('typography') %>
     </head>
     <body>
+    	<div class="c-skiplinks">
+            <a href="/#main-content">Skip to main content</a>
+        </div>
         <% include Header %>
-		<div class="main" role="main">
-			$Layout
-		</div>
-		<% include Footer %>
+	<div class="main" role="main">
+		$Layout
+	</div>
+	<% include Footer %>
 
-		<script src="{$ThemeDir}/js/vendor/modernizr-3.11.2.min.js"></script>
+	<script src="{$ThemeDir}/js/vendor/modernizr-3.11.2.min.js"></script>
         <script src="{$ThemeDir}/js/plugins.js"></script>
         <script src="{$ThemeDir}/js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <%-- Google Analytics: change UA-XXXXX-Y to be your site's ID. --%>
         <script>
           window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
           ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
