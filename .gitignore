@@ -1,0 +1,7 @@
+node_modules
+vendor
+*.log
+images/.DS_Store
+css/.DS_Store
+js/.DS_Store
+base-files/.DS_Store

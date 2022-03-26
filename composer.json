@@ -15,9 +15,8 @@
 	    "issues": "http://github.com/mandrew/hardyakka/issues"
 	},
 	"require": {
-		"composer/installers": "*",
-		"silverstripe/framework": ">=3.2"
-	},
+        "silverstripe/framework": "^4.0"
+    },
 	"extra": {
         "expose": [
             "css",
