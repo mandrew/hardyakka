@@ -28,12 +28,12 @@
             <a href="/#main-content">Skip to main content</a>
         </div>
         <% include Header %>
-	<div class="main" role="main">
-		$Layout
-	</div>
-	<% include Footer %>
+        <div class="main" role="main">
+            $Layout
+        </div>
+	    <% include Footer %>
 
-	<script src="{$ThemeDir}/js/vendor/modernizr-3.11.2.min.js"></script>
+	    <script src="{$ThemeDir}/js/vendor/modernizr-3.11.2.min.js"></script>
         <script src="{$ThemeDir}/js/plugins.js"></script>
         <script src="{$ThemeDir}/js/main.js"></script>
 
