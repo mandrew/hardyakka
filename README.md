@@ -25,20 +25,16 @@ Current version uses [v8.0.0](https://github.com/h5bp/html5-boilerplate/blob/v8.
 	* crossdomain.xml
 	* humans.txt
 	* robots.txt
-    * favicons/favicon.ico
-    * favicons/icon.png
-    * favicons/site.webmanifest
-    * favicons/tile-wide.png
-    * favicons/tile.png
-    * favicons/apple-touch-icon.png
 
-**Note:** Transfer these Boilerplate files into the /public folder, /favicons images are being pointed to the folder via the template.
-If you are going to use the style.css file then keep the blank layout.css file so the cms/layout.css styles aren't inherited into your template on a fresh install or instead rename the style.css file to layout.css so as to not cause these conflicts
+**Note:** 
+ * Transfer these /base-files into the /public folder, favicon images are being pointed to the /ico folder via the template inside /Includes/Favicon.ss.
+ * If you are going to use the style.css file then keep the blank layout.css file so the cms/layout.css styles aren't inherited into your template on a fresh install or instead rename the style.css file to layout.css so as to not cause these conflicts
+ * Is Normalize already being added to your custom styles? If so, review the Page.ss template includes for normalize.css, modernizr-3.11.2.min.js and adjust/remove accordingly 
 
-Dont forget to:
- * Change the favicons.ico and apple touch icons
+**Dont forget to:**
+ * Change the /ico/favicons.ico and apple touch icons
  * Update the google analytics code at the bottom of the Page.ss file
- * Update the humans.txt, robots.txt, crossdomain.xml and browserconfig.xml files
+ * Update the humans.txt, robots.txt, crossdomain.xml and browserconfig.xml
 
 ## Extend the base theme ##
 Although HTML5 Boilerplate comes with css, you can follow the docs/ files to extend this theme and even get it working with twitter bootstrap if you want to.
