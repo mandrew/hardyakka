@@ -1,14 +1,10 @@
-<aside>
-	<% if $Menu(2) %>
-		<nav>
-			<% with $Level(1) %>
-				<h3>
-					$MenuTitle
-				</h3>
-				<ul>
-					<% include SidebarMenu %>
-				</ul>
-			<% end_with %>
-		</nav>
-	<% end_if %>
-</aside>
+<% if $Children %>
+<section class="related">
+    <div class="related__inner">
+        <h2>In this section</h2>
+        <ul class="clean-list" role="list">
+			<% include SidebarMenu %>
+        </ul>
+    </div>
+</section>
+<% end_if %>

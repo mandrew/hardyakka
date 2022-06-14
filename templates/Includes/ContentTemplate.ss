@@ -1,44 +1,43 @@
 ﻿<br>
 <hr>
-<h1>Hard Yakka Default Template - Built by Michael Andrewartha (mandrewnz (at) gmail dot com)</h1>
-<p>Website: <a href="http://mike.andrewartha.co.nz/">http://mike.andrewartha.co.nz/</a></p>
-<p>Twitter: <a href="http://twitter.com/mandrewnz">mandrewnz</a></p></br>
+<h2>Hard Yakka Default Template - Built by Michael Andrewartha (mandrewnz (at) gmail dot com)</h2>
+<p>Website: <a href="http://mike.andrewartha.co.nz/">http://mike.andrewartha.co.nz/</a><br>
+Twitter: <a href="http://twitter.com/mandrewnz">mandrewnz</a></p>
+<hr>
 
-<h1>Handy SilverStripe links:</h1>
+<h2>Handy SilverStripe links:</h2>
 <ul>
 	<li><a href="http://silverstripe.com/">SilverStripe.com</a></li>
 	<li><a href="http://silverstripe.org/">SilverStripe.org</a></li>
 	<li><a href="http://doc.silverstripe.org/">SilverStripe Documentation</a></li>
 	<li><a href="http://silverstripe.org/download/">SilverStripe download page</a></li>
 </ul>
-</br>
 
-<h1>HTML Styles that are added by default via the TinyMCE WYSIWYG content editor</h1>
-<br>
 
-<h1>Default paragraph with text styles and links</h1>
-<br>
+<h2>HTML Styles that are added by default via the TinyMCE WYSIWYG content editor</h2>
+
+<h2>Default paragraph with text styles and links</h2>
 <p><strong>Lorem</strong> ipsum <em>dolor</em> sit <em>amet</em>, test link <span style="text-decoration: underline;">adipiscing</span> elit. <span style="text-decoration: line-through;">Nullam</span> dignissim <a href="">Your Link</a>. Quisque aliquam. <a title="Your Link description" href="" target="_blank">Your Link to another window</a> (with link description) faucibus. Nunc iaculis <a href="assets/Uploads/test.doc" target="_blank">Word Document</a> dui. Nam sit amet sem. <a href="assets/Uploads/test.pdf" target="_blank">PDF Document</a> libero nisi, imperdiet at, <a href="assets/Uploads/test.xls" target="_blank">Excel Document</a> nec, gravida vehicula, nisl. <a href="assets/Uploads/test.zip" target="_blank">Zip Document</a> mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla <a title="test website email link" href="mailto:test@test.com">test@test.com</a>. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.﻿﻿</p>
 
-<p> </p>
+
 <p>&amp; &#36; &pound; &euro; &#8482; &copy;</p>
-<p> </p>
+
 <p style="padding-left: 30px;">One text indent</p>
 <p style="padding-left: 30px;"> </p>
 <p style="padding-left: 60px;">Two text indents</p>
 <p style="padding-left: 30px;"> </p>
 <p style="padding-left: 90px;">Three text indent</p>
-<p> </p>
+
 
 <p><a title="anchor description" href="?flush=1#linkname">anchor link</a>﻿ to Anchor text</p>
 
 <hr>
-<p><small><a href="#main-content">[TOP]</a></small></p></br>
+<p><small><a href="#main-content">[TOP]</a></small></p>
 
-<h1>List types</h1>
-<p> </p>
+<h2>List types</h2>
+
 <p>Ordered list</p>
-<p> </p>
+
 <ol><li><strong>Lorem</strong> ipsum dolor sit <em>amet</em>, test link <span style="text-decoration: underline;">adipiscing</span> elit. Nullam dignissim﻿</li>
 
 <li><strong>Lorem</strong> ipsum dolor sit <em>amet</em>, test link <span style="text-decoration: underline;">adipiscing</span> elit. Nullam dignissim﻿</li>
@@ -51,9 +50,9 @@
 </ol></ol><li><strong>Lorem</strong> ipsum dolor sit <em>amet</em>, test link <span style="text-decoration: underline;">adipiscing</span> elit. Nullam dignissim﻿</li>
 
 <li><strong>Lorem</strong> ipsum dolor sit <em>amet</em>, test link <span style="text-decoration: underline;">adipiscing</span> elit. Nullam dignissim﻿</li>
-</ol><p> </p>
+</ol>
 <p>Unordered list</p>
-<p> </p>
+
 <ul><li><strong>Lorem</strong> ipsum dolor sit <em>amet</em>, test link <span style="text-decoration: underline;">adipiscing</span> elit. Nullam dignissim﻿</li>
 
 <li><strong>Lorem</strong> ipsum dolor sit <em>amet</em>, test link <span style="text-decoration: underline;">adipiscing</span> elit. Nullam dignissim﻿</li>
@@ -69,20 +68,20 @@
 </ul>
 
 <hr>
-<p><small><a href="#main-content">[TOP]</a></small></p></br>
+<p><small><a href="#main-content">[TOP]</a></small></p>
 
-<h1>Text alignment</h1>
-<p> </p>
+<h2>Text alignment</h2>
+
 <p>Align left</p>
 
 <p style="text-align: center;">Align center</p>
 <p style="text-align: right;">Align right</p>
 
 <hr>
-<p><small><a href="#main-content">[TOP]</a></small></p></br>
+<p><small><a href="#main-content">[TOP]</a></small></p>
 
-<h1>Formatted text</h1>
-<p> </p>
+<h2>Formatted text</h2>
+
 <address>Address</address>
 <pre>Preformatted</pre>
 <h1>Heading 1</h1>
@@ -93,10 +92,10 @@
 <h6>Heading 6</h6>
 
 <hr>
-<p><small><a href="#main-content">[TOP]</a></small></p></br>
+<p><small><a href="#main-content">[TOP]</a></small></p>
 
-<h1>Images with dummy text</h1>
-<p> </p>
+<h2>Images with dummy text</h2>
+
 <p><img class="left" title="" src="{$ThemeDir}/images/SilverStripeLogo.png" alt="" width="150" height="133"/>Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
 <p>Lorem ipsum dolor sit amet, emphasis consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
 
@@ -150,10 +149,10 @@
 </div>
 
 <hr>
-<p><small><a href="#main-content">[TOP]</a></small></p></br>
+<p><small><a href="#main-content">[TOP]</a></small></p>
 
-<h1>Blockquotes</h1>
-<p> </p>
+<h2>Blockquotes</h2>
+
 
 <blockquote>
 	<p style="text-align: justify;">"Lorem <strong>ipsum</strong> dolor <em>sit</em> amet, <span style="text-decoration: underline;">emphasis</span> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor."</p>
@@ -176,18 +175,18 @@
 <p style="text-align: right;"> </p>
 
 <hr>
-<p><small><a href="#main-content">[TOP]</a></small></p></br>
+<p><small><a href="#main-content">[TOP]</a></small></p>
 
-<h1>Anchor text</h1>
-<p> </p>
+<h2>Anchor text</h2>
+
 <p><a name="linkname"> </a>Lorem ipsum dolor sit amet, consectetuer﻿ adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
-<p> </p>
+
 
 <hr>
-<p><small><a href="#main-content">[TOP]</a></small></p></br>
+<p><small><a href="#main-content">[TOP]</a></small></p>
 
-<h1>Table</h1>
-<p> </p>
+<h2>Table</h2>
+
 <table border="1" cellspacing="10" cellpadding="0">
 	<tbody>
 		<tr>
@@ -209,11 +208,11 @@
 </table>
 
 <hr>
-<p><small><a href="#main-content">[TOP]</a></small></p></br>
+<p><small><a href="#main-content">[TOP]</a></small></p>
 
-<h1>HTML objects that aren't added by default but may need to be styled when designing a site</h1></br>
+<h2>HTML objects that aren't added by default but may need to be styled when designing a site</h2>
 
-<h1>Definition List</h1>
+<h2>Definition List</h2>
 <dl>
 <dt>Title</dt>
 <dd>Definition list 1</dd>
@@ -224,7 +223,7 @@
 <hr>
 <p><small><a href="#wrapper">[TOP]</a></small></p>
 
-<h1>Form styling for the UserDefinedForm module</h1>
+<h2>Form styling for the UserDefinedForm module</h2>
 
 <form id="Form_Form" action="/theme/form-name/Form" method="post" enctype="multipart/form-data">
 	<p id="Form_Form_error" class="message " style="display: none"></p>

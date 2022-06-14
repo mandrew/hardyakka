@@ -1,4 +1,4 @@
-<footer>
+<footer class="wrapper">
 	<address>
 		<a itemprop="email" href="mailto:contact-email@website.com">contact-email@website.com</a>
 	</address>

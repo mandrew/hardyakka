@@ -46,8 +46,10 @@ Although HTML5 Boilerplate comes with css, you can follow the docs/ files to ext
 
  * [SilverStripe](http://silverstripe.org/)
  * [HTML5 Boilerplate](http://html5boilerplate.com/)
+ * [Some nice basic CSS](https://some-nice-basic-css.netlify.app)
  * [mike.andrewartha.co.nz](http://mike.andrewartha.co.nz/)
 
 ## TODO: ##
 
  * Add sass files
+ * Use https://github.com/hankchizljaw/modern-css-reset instead of normalize?

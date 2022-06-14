@@ -1,7 +1,7 @@
 <% include Sidebar %>
-<div id="main-content" class="typography">
-	<% include Breadcrumbs %>
-	<h2>$Title</h2>
+<article id="main-content" class="typography post flow">
+	$Breadcrumbs
+	<h1>$Title</h1>
 	<% if $ElementalArea %>
 		<%-- Support for content blocks, if enabled --%>
 		$ElementalArea
@@ -18,4 +18,4 @@
 	
 	$Form
 	$PageComments
-</div>
+</article>

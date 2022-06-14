@@ -16,12 +16,12 @@
     </head>
     <body>
     	<div class="c-skiplinks">
-            <a href="#main-content">Skip to main content</a>
+            <a href="#main-content" class="visuallyhidden">Skip to main content</a>
         </div>
         <% include Header %>
-        <div class="main" role="main">
+        <main class="main wrapper">
             $Layout
-        </div>
+        </main>
 	    <% include Footer %>
 
         <% require themedJavascript('js/vendor/modernizr-3.11.2.min.js') %>
