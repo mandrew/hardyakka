@@ -1,5 +1,6 @@
-/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -11,27 +12,29 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* Vendor-prefixed and regular ::selection selectors cannot be combined:
+* https://stackoverflow.com/a/16982510/7133471
+*
+* Customize the background color to match your design.
+*/
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 /*
@@ -39,12 +42,12 @@ html {
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -59,7 +62,7 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /*
@@ -67,9 +70,9 @@ video {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -77,18 +80,7 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  resize: vertical;
 }
 
 /* ==========================================================================
@@ -97,157 +89,157 @@ textarea {
 
 /* Globals */
 body {
-    background: #f3f3f3;
-    color: #252525;
-    padding: 3rem 0;
-    line-height: 1.5;
-    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: #f3f3f3;
+  color: #252525;
+  padding: 3rem 0;
+  line-height: 1.5;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
   
 h1,
 h2,
 h3 {
-    line-height: 1.2;
-    max-width: 35ch;
+  line-height: 1.2;
+  max-width: 35ch;
 }
   
 h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
   
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
   
 h3 {
-    font-size: 1.75rem;
+  font-size: 1.75rem;
 }
   
 /* More info: https://piccalil.li/quick-tip/limit-line-lengths-to-increase-readability/ */
 p,
 li,
 dl {
-    max-width: 70ch;
+  max-width: 70ch;
 }
   
 dl {
-    display: grid;
-    grid-template-columns: minmax(auto, 20ch) 1fr;
-    grid-gap: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: minmax(auto, 20ch) 1fr;
+  grid-gap: 0.5rem 1rem;
 }
   
 dt {
-    font-weight: bold;
+  font-weight: bold;
 }
   
 li + li {
-    margin-top: 0.7rem;
+  margin-top: 0.7rem;
 }
   
 blockquote {
-    border-left: 0.25rem solid;
-    font-style: italic;
-    font-size: 1.25rem;
-    line-height: 1.35;
-    max-width: 55ch;
-    padding-left: 1.25rem;
+  border-left: 0.25rem solid;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  max-width: 55ch;
+  padding-left: 1.25rem;
 }
   
 code {
-    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-    font-size: 0.95em;
-    font-weight: bold;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 0.95em;
+  font-weight: bold;
 }
   
 pre {
-    padding: 1.25rem;
-    background: #e4e6ec;
-    max-width: 90ch;
+  padding: 1.25rem;
+  background: #e4e6ec;
+  max-width: 90ch;
 }
   
 pre code {
-    display: block;
-    width: 100%;
-    word-spacing: normal;
-    word-break: normal;
-    tab-size: 2;
-    hyphens: none;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+  display: block;
+  width: 100%;
+  word-spacing: normal;
+  word-break: normal;
+  tab-size: 2;
+  hyphens: none;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
   
 /* Links and focus states */
 a {
-    color: currentColor;
+  color: currentColor;
 }
   
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
   
 :focus {
-    outline: 1px dashed currentColor;
-    outline-offset: 0.15rem;
+  outline: 1px dashed currentColor;
+  outline-offset: 0.15rem;
 }
 
 /* Remove default list styles that have role=list added */
 ul[role="list"],
 ol[role="list"] {
-    list-style:none;
-    margin: 0;
-    padding: 0;
+  list-style:none;
+  margin: 0;
+  padding: 0;
 }
 ul[role="list"] li,
 ol[role="list"] li {
-    display: inline-block;
-    margin-top: 0;
+  display: inline-block;
+  margin-top: 0;
 }
 
 /* Breadcrumbs */
 .breadcrumb a:after {
-    display: inline-block;
-    content: '';
-    width: 8px;
-    height: 8px;
-    margin-inline: 5px;
-    border-top: 2px solid #1a1a1a;
-    border-right: 2px solid #1a1a1a;
-    transform: rotate(45deg);
+  display: inline-block;
+  content: '';
+  width: 8px;
+  height: 8px;
+  margin-inline: 5px;
+  border-top: 2px solid #1a1a1a;
+  border-right: 2px solid #1a1a1a;
+  transform: rotate(45deg);
 }
 .breadcrumb li:last-of-type a:after {
-    display: none;
+  display: none;
 }
   
 /* Handy utils */
 .wrapper {
-    max-width: 65rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+  max-width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
   
 /* More info: https://piccalil.li/quick-tip/flow-css-utility/ */
 .flow > * + * {
-    margin-top: var(--flow-space, 1em);
+  margin-top: var(--flow-space, 1em);
 }
   
 /* A handy composition block for managing content flow. More on this sorta thing: https://cube.fyi */
 .post {
-    font-size: 1.125rem;
-    --flow-space: 1.8rem;
+  font-size: 1.125rem;
+  --flow-space: 1.8rem;
 }
   
 .post h2,
 .post h3,
 .post footer {
-    --flow-space: 3rem;
+  --flow-space: 3rem;
 }
   
 .post h1 + *,
 .post h2 + *,
 .post h3 + * {
-    --flow-space: 1rem;
+  --flow-space: 1rem;
 }
 
 
@@ -256,43 +248,51 @@ ol[role="list"] li {
    ========================================================================== */
 
 /*
- * Hide visually and from screen readers:
+ * Hide visually and from screen readers
  */
 
-.hidden {
-    display: none !important;
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+ /*
+  * Hide only visually, but have it available for screen readers:
+  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+  *
+  * 1. For long content, line feeds are not interpreted as spaces and small width
+  *    causes content to wrap 1 word per line:
+  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+  */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
 }
 
 /*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
+ * Extends the .sr-only class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
 }
 
 /*
@@ -300,7 +300,7 @@ ol[role="list"] li {
  */
 
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /*
@@ -315,14 +315,14 @@ ol[role="list"] li {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
 }
 
-.clearfix:after {
-    clear: both;
+.clearfix::after {
+  clear: both;
 }
 
 /* ==========================================================================
@@ -332,89 +332,87 @@ ol[role="list"] li {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+  /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
+   https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+/*
+ * Don't show links that are fragment identifiers,
+ * or use the `javascript:` pseudo protocol
+ */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+ 
+  pre {
+    white-space: pre-wrap !important;
+  }
+ 
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+ 
+/*
+ * Printing Tables:
+ * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+ */
+  thead {
+    display: table-header-group;
+  }
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }

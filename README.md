@@ -20,21 +20,21 @@ You should then see a fairly barebones theme, ready to build with :)
 
 ### html5boilerplate ###
 Current version uses [v8.0.0](https://github.com/h5bp/html5-boilerplate/blob/v8.0.0/CHANGELOG.md)
-/base-files contains the following files from HTML5 boilerplate
-	* browserconfig.xml
-	* crossdomain.xml
-	* humans.txt
-	* robots.txt
 
 **Note:** 
- * Transfer these /base-files into the /public folder, favicon images are being pointed to the /ico folder via the template inside /Includes/Favicon.ss.
- * If you are going to use the style.css file then keep the blank layout.css file so the cms/layout.css styles aren't inherited into your template on a fresh install or instead rename the style.css file to layout.css so as to not cause these conflicts
+ * Refer to https://github.com/h5bp/html5-boilerplate/blob/v8.0.0/dist/doc/TOC.md for the HTML5boilerplate docs
+ * Javascript: Package files removed, hardyakka has minimal javascript files to get you going. You can choose to use the package.json from the repo if you wish 
+ * Webmanifest - File removed, however adding one to your Silverstripe site is a good idea! Maybe use a module like lerni/silverstripe-webmanifest
+ * Robots.txt - File removed, maybe use the module like tractorcow/silverstripe-robots or gorriecoe/silverstripe-robots to add one to your Silverstripe site
+ * Humans.txt - File removed, feel free to add it using a module or some code like philandi/silverstripe-humans or something custom like dnadesign/silverstripe-signature
+ * browserconfig.xml - File removed, feel free to add it using Silverstripe. No module as yet!
+ * Favicon images are being pointed to the /ico folder via the template inside /Includes/Favicon.ss.
+ * OG tags can be added to the template by using a module such as tractorcow/silverstripe-opengraph
  * Is Normalize already being added to your custom styles? If so, review the Page.ss template includes for normalize.css, modernizr-3.11.2.min.js and adjust/remove accordingly 
 
 **Dont forget to:**
  * Change the /ico/favicons.ico and apple touch icons
  * Update the google analytics code at the bottom of the Page.ss file
- * Update the humans.txt, robots.txt, crossdomain.xml and browserconfig.xml
 
 ## Extend the base theme ##
 Although HTML5 Boilerplate comes with css, you can follow the docs/ files to extend this theme and even get it working with twitter bootstrap if you want to.
@@ -50,6 +50,3 @@ Although HTML5 Boilerplate comes with css, you can follow the docs/ files to ext
  * [mike.andrewartha.co.nz](http://mike.andrewartha.co.nz/)
 
 ## TODO: ##
-
- * Add sass files
- * Use https://github.com/hankchizljaw/modern-css-reset instead of normalize?

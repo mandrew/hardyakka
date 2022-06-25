@@ -16,7 +16,7 @@
     </head>
     <body>
     	<div class="c-skiplinks">
-            <a href="#main-content" class="visuallyhidden">Skip to main content</a>
+            <a href="#main-content" class="sr-only">Skip to main content</a>
         </div>
         <% include Header %>
         <main class="main wrapper">
