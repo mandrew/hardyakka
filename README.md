@@ -29,7 +29,7 @@ Current version uses [v8.0.0](https://github.com/h5bp/html5-boilerplate/blob/v8.
  * Humans.txt - File removed, feel free to add it using a module or some code like philandi/silverstripe-humans or something custom like dnadesign/silverstripe-signature
  * browserconfig.xml - File removed, feel free to add it using Silverstripe. No module as yet!
  * Favicon images are being pointed to the /ico folder via the template inside /Includes/Favicon.ss.
- * OG tags can be added to the template by using a module such as tractorcow/silverstripe-opengraph
+ * OG tags have been added as default fields using includes/OGtags.ss, however they can be added to the template by using a module such as tractorcow/silverstripe-opengraph
  * Is Normalize already being added to your custom styles? If so, review the Page.ss template includes for normalize.css, modernizr-3.11.2.min.js and adjust/remove accordingly 
 
 **Dont forget to:**
