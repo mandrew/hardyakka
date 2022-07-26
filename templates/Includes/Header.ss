@@ -1,8 +1,6 @@
 <header class="wrapper">
-	<a href="$BaseHref" rel="home">
-		$SiteConfig.Title
-		<% if $SiteConfig.Tagline %><p><$SiteConfig.Tagline</p><% end_if %>
-	</a>
+	<a href="$BaseHref" class="header-title" rel="home">$SiteConfig.Title</a>
+	<% if $SiteConfig.Tagline %><p class="header-tagline">$SiteConfig.Tagline</p><% end_if %>
 	
 	<% if $SearchForm %>$SearchForm<% end_if %>
 	

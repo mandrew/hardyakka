@@ -93,28 +93,35 @@ body {
   color: #252525;
   padding: 3rem 0;
   line-height: 1.5;
-  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
-  
+
+body,
+.typography {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 h1,
+.h1,
 h2,
-h3 {
-  line-height: 1.2;
-  max-width: 35ch;
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.typography h1,
+.typography h2, 
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6 {
+  font-weight: 500;
+  font-family: Georgia, Times, 'Times New Roman', serif;
 }
-  
-h1 {
-  font-size: 2.5rem;
-}
-  
-h2 {
-  font-size: 2rem;
-}
-  
-h3 {
-  font-size: 1.75rem;
-}
-  
+
 /* More info: https://piccalil.li/quick-tip/limit-line-lengths-to-increase-readability/ */
 p,
 li,
@@ -167,20 +174,6 @@ pre code {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
-  
-/* Links and focus states */
-a {
-  color: currentColor;
-}
-  
-a:hover {
-  text-decoration: none;
-}
-  
-:focus {
-  outline: 1px dashed currentColor;
-  outline-offset: 0.15rem;
-}
 
 /* Remove default list styles that have role=list added */
 ul[role="list"],
@@ -193,6 +186,11 @@ ul[role="list"] li,
 ol[role="list"] li {
   display: inline-block;
   margin-top: 0;
+}
+
+/* Nav */
+.nav > * + * {
+  margin-left: var(--flow-space, 1em);
 }
 
 /* Breadcrumbs */
@@ -223,25 +221,28 @@ ol[role="list"] li {
 .flow > * + * {
   margin-top: var(--flow-space, 1em);
 }
-  
-/* A handy composition block for managing content flow. More on this sorta thing: https://cube.fyi */
-.post {
-  font-size: 1.125rem;
-  --flow-space: 1.8rem;
-}
-  
-.post h2,
-.post h3,
-.post footer {
-  --flow-space: 3rem;
-}
-  
-.post h1 + *,
-.post h2 + *,
-.post h3 + * {
-  --flow-space: 1rem;
+
+.header-title,
+.header-tagline {
+  font-weight: 500;
+  font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
+.header-title {
+  font-size: 4em;
+  text-decoration: none;
+}
+.header-title:visited {
+  color: #000;
+}
+.header-title:hover {
+  text-decoration: underline;
+}
+
+.header-tagline {
+  font-size: 2em;
+  margin-top: 0;
+}
 
 /* ==========================================================================
    Helper classes

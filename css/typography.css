@@ -11,6 +11,23 @@
  * Author: Michael Andrewartha
  */
 
+.typography {
+	font-size: 1.125rem;
+	--flow-space: 1.8rem;
+}
+
+.typography h2,
+.typography h3,
+.typography footer {
+	--flow-space: 3rem;
+}
+
+.typography h1 + *,
+.typography h2 + *,
+.typography h3 + * {
+	--flow-space: 1rem;
+}
+
 /**
  * Paragraphs 
  */
@@ -47,10 +64,26 @@
 /**
  * Links 
  */
-.typography a,
-.typography a:active,
-.typography a:visited { color: #607890; }
-	.typography a:hover { color: #036; }
+a,
+.typography a {
+	color: currentColor;
+}
+	
+a:hover,
+.typography a:hover {
+	text-decoration: none;
+}
+
+:visited,
+.typography :visited {
+	color: #6e6e6e;
+}
+
+:focus,
+.typography :focus {
+	outline: 1px dashed currentColor;
+	outline-offset: 0.15rem;
+}
 
 	/**
 	 * Link icons - merged from BlackCandy theme and will only work if you view the
@@ -98,29 +131,62 @@
  * and Chrome.
  */
 
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.typography h1,
+.typography h2, 
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6 {
+	line-height: 1.2;
+	max-width: 35ch;
+}
+
+h1,
+.h1,
 .typography h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+	font-size: 2.5rem;
 }
+
+h2,
+.h2,
 .typography h2 {
-    font-size: 1.5em;
-    margin: 0.83em 0;
+	font-size: 2rem;
 }
+
+h3,
+.h3,
 .typography h3 {
-    font-size: 1.17em;
-    margin: 1em 0;
+	font-size: 1.75rem;
 }
+
+h4,
+.h4,
 .typography h4 {
     font-size: 1em;
-    margin: 1.33em 0;
 }
+
+h5,
+.h5,
 .typography h5 {
     font-size: 0.83em;
-    margin: 1.67em 0;
 }
+
+h6,
+.h6,
 .typography h6 {
     font-size: 0.67em;
-    margin: 2.33em 0;
 }
 
 /**
@@ -131,7 +197,8 @@
     border-collapse: collapse;
     border-spacing: 0;
 }
-.typography .formalTable { /* create your own table styling here */ }
+/* create your own table styling here */
+/*.typography .formalTable { }*/
 
 /**
  * WYSIWYG Editor Alignment Classes 
